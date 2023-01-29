@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<style>
+  canvas {
+    border: 5px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .one {
+        flex: 1 1 auto;
+      }
+
+      .two {
+        flex: 1 1 auto;
+      }
+
+</style>
+
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Pick Up Pong</title>
+  </head>
+
+  <body onload="draw();">
+      <div class="center">
+        <div class="one">
+        <canvas tabindex='1' id="canvas" width="858" height="525" style="background-color: lightgray;" autofocus></canvas>
+      </div>
+        <div class="two">
+          player1
+          <ol>
+            <li>Player 1</li>
+            <li>Player 2</li>
+            <li>Player 3</li>
+            <li>Player 4</li>
+            <li>Player 5</li>
+          </ol>
+        </div>
+      </div>
+
+
+  </body>
+
+</html>
+
+
+<script src="/javascripts/gameLoop.js"></script>
